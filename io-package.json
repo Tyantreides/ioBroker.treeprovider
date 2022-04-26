@@ -36,7 +36,7 @@
 		"loglevel": "info",
 		"mode": "schedule",
 		"allowInit": true,
-		"schedule": "*/30 * * * *",
+		"schedule": "*/20 * * * * *",
 		"type": "communication",
 		"compact": true,
 		"connectionType": "local",
