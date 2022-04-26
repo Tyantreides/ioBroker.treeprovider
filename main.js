@@ -7,6 +7,7 @@
 // The adapter-core module gives you access to the core ioBroker functions
 // you need to create an adapter
 const utils = require("@iobroker/adapter-core");
+const { treeBuilder } = require('./lib/treeBuilder')
 
 // Load your modules here, e.g.:
 // const fs = require("fs");
@@ -21,6 +22,7 @@ class Treeprovider extends utils.Adapter {
 			...options,
 			name: "treeprovider",
 		});
+		this.treeBuilderInstance = new treeBuilder(this);
 		this.on("ready", this.onReady.bind(this));
 		this.on("stateChange", this.onStateChange.bind(this));
 		// this.on("objectChange", this.onObjectChange.bind(this));
@@ -36,10 +38,10 @@ class Treeprovider extends utils.Adapter {
 
 		this.log.info("on ready done.");
 
-		// this.treeBuilderInstance.initDataFields().then(() => {
-		// 	this.log.info(`Data fields ready.`);
-		// 	this.treeBuilderInstance.getDataView('channel')
-		// });
+		this.treeBuilderInstance.initDataFields().then(() => {
+			this.log.info(`Data fields ready.`);
+//			this.treeBuilderInstance.getDataView('channel')
+		});
 
 		this.stop();
 		// The adapters config (in the instance object everything under the attribute "native") is accessible via
