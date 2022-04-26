@@ -1,0 +1,99 @@
+{
+	"common": {
+		"name": "treeprovider",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "Treeprovider",
+		"titleLang": {
+			"en": "Treeprovider",
+			"de": "Baumanbieter",
+			"ru": "Деревопровайдер",
+			"pt": "Provedor de árvore",
+			"nl": "Treeprovider",
+			"fr": "Fournisseur d'arbres",
+			"it": "Fornitore di alberi",
+			"es": "árbolproveedor",
+			"pl": "Dostawca drzew",
+			"zh-cn": "树提供者"
+		},
+		"desc": {
+			"en": "treeprovider",
+			"de": "Baumanbieter",
+			"ru": "поставщик дерева",
+			"pt": "provedor de árvores",
+			"nl": "boomaanbieder",
+			"fr": "fournisseur d'arborescence",
+			"it": "fornitore di alberi",
+			"es": "árbolproveedor",
+			"pl": "dostawca drzew",
+			"zh-cn": "树提供者"
+		},
+		"authors": [
+			"Tyantreides <tyantreides@pocketpromotion.de>"
+		],
+		"keywords": [
+			"ioBroker",
+			"template",
+			"Smart Home",
+			"home automation"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "treeprovider.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/Tyantreides/ioBroker.treeprovider/main/admin/treeprovider.png",
+		"readme": "https://github.com/Tyantreides/ioBroker.treeprovider/blob/main/README.md",
+		"loglevel": "info",
+		"mode": "schedule",
+		"allowInit": true,
+		"type": "communication",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "poll",
+		"materialize": true,
+		"materializeTab": true,
+		"adminTab": {
+			"singleton": true,
+			"name": {
+				"en": "Treeprovider",
+				"de": "Baumanbieter",
+				"ru": "Деревопровайдер",
+				"pt": "Provedor de árvore",
+				"nl": "Treeprovider",
+				"fr": "Fournisseur d'arbres",
+				"it": "Fornitore di alberi",
+				"es": "árbolproveedor",
+				"pl": "Dostawca drzew",
+				"zh-cn": "树提供者"
+			},
+			"link": "",
+			"fa-icon": "info"
+		},
+		"eraseOnUpload": true,
+		"dependencies": [
+			{
+				"js-controller": ">=2.0.0"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": []
+}
