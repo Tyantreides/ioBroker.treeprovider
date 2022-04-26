@@ -3,6 +3,7 @@ import { withStyles } from "@material-ui/core/styles";
 
 import GenericApp from "@iobroker/adapter-react/GenericApp";
 import ObjectTreeView from "./components/ObjectTreeView";
+import TreeView from "./components/TreeView";
 
 /**
  * @type {(_theme: Theme) => import("@material-ui/styles").StyleRules}
@@ -45,6 +46,7 @@ class TabApp extends GenericApp {
 		return (
 			<div className="App">
 				<ObjectTreeView treeData={{}} />
+				<TreeView />
 				{this.renderError()}
 				{this.renderToast()}
 			</div>
