@@ -39,20 +39,20 @@ const TreeLayout = (props) => {
 
     const EditNode = (rowInfo) => {
         console.log(rowInfo)
-        // if (event.parentNode !== null) {
-        //     const i = treeData.findIndex((a) => a.id === event.parentNode.id);
-        //     const j = treeData[i].children.findIndex((a) => a.id === event.node.id);
-        //     const title = treeData[i].children[j].title;
-        //     setparentNodeIndex(i);
-        //     setcurrentNodeIndex(j);
-        //     setcurrentNodeItem(title);
-        //     setaction("edit");
-        // } else {
-        //     const i = treeData.findIndex((a) => a.id === event.node.id);
-        //     setcurrentNodeIndex(i);
-        //     setcurrentNodeItem(treeData[i].title);
-        //     setaction("edit");
-        // }
+        if (rowInfo.parentNode !== null && rowInfo.parentNode !== undefined ) {
+            const i = treeData.findIndex((a) => a.id === rowInfo.parentNode.id);
+            const j = treeData[i].children.findIndex((a) => a.id === rowInfo.node.id);
+            const title = treeData[i].children[j].title;
+            setparentNodeIndex(i);
+            setcurrentNodeIndex(j);
+            setcurrentNodeItem(title);
+            setaction("edit");
+        } else {
+            const i = treeData.findIndex((a) => a.id === rowInfo.node.id);
+            setcurrentNodeIndex(i);
+            setcurrentNodeItem(treeData[i].title);
+            setaction("edit");
+        }
     };
 
     const removeNode = (rowInfo) => {

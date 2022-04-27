@@ -60,8 +60,6 @@ const TreeView = ({ data, EditNode, removeNode, updateTreeData }) => {
                                     style={{ margin: "0 3px" }}
                                     label="Delete"
                                     onClick={() => {
-                                        console.log('rowInfo:');
-                                        console.log(rowInfo)
                                         EditNode(rowInfo)
                                     }}
                                 >
