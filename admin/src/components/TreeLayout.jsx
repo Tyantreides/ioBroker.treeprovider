@@ -4,7 +4,7 @@ import TreeView from "./TreeView/TreeView";
 import NodeEditor from "./TreeView/NodeEditor";
 //import "./styles.css";
 //import { arrayMove } from "react-sortable-hoc";
-import { getNodeKey, removeNodeAtPath } from "@nosferatu500/react-sortable-tree";
+import { removeNodeAtPath } from "@nosferatu500/react-sortable-tree";
 
 const TreeLayout = (props) => {
     const initialData = [
