@@ -25,7 +25,7 @@
     "@alcalzone/release-script": "^2.2.2",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
-    "@fluentui/react": "^8.67.1",
+    "@fluentui/react": "^8.103.3",
     "@iobroker/adapter-dev": "^1.0.0",
     "@iobroker/adapter-react": "2.0.22",
     "@iobroker/testing": "^2.6.0",
